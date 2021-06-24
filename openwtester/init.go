@@ -1,7 +1,7 @@
 package openwtester
 
 import (
-	"github.com/blocktree/dexchain-test-adapter/dexchain"
+	"github.com/assetsadapterstore/dexchain-testnet-adapter/dexchain"
 	"github.com/blocktree/openwallet/v2/log"
 	"github.com/blocktree/openwallet/v2/openw"
 )

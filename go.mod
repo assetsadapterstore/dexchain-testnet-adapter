@@ -1,4 +1,4 @@
-module github.com/blocktree/dexchain-test-adapter
+module github.com/assetsadapterstore/dexchain-testnet-adapter
 
 go 1.12
 

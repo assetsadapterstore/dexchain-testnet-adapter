@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/blocktree/dexchain-test-adapter/dexchain"
+	"github.com/assetsadapterstore/dexchain-testnet-adapter/dexchain"
 )
 
 func main()  {

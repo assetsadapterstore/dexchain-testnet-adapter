@@ -80,7 +80,7 @@ func TestSubscribeAddress_TDEX(t *testing.T) {
 		return
 	}
 	scanner.SetBlockScanTargetFuncV2(testScanTargetFunc(symbol))
-	scanner.SetRescanBlockHeight(10280629)
+	scanner.SetRescanBlockHeight(1017150)
 	scanner.Run()
 
 	<-endRunning
@@ -150,8 +150,8 @@ func testScanTargetFunc(symbol string) openwallet.BlockScanTargetFuncV2 {
 	contracts[contract.Address] = openwallet.ScanTargetResult{SourceKey: contract.ContractID, Exist: true, TargetInfo: contract}
 
 	//添加监听的外部地址
-	addrs["0x0ff8d979e33412a2904a66226ff6a336d7c873db"] = openwallet.ScanTargetResult{SourceKey: "sender", Exist: true}
-	addrs["0xc97a4ed29f03fd549c4ae79086673523122d2bc5"] = openwallet.ScanTargetResult{SourceKey: "receiver", Exist: true}
+	addrs["0x9080f4597b0a208657752ac828301f32070d30fd"] = openwallet.ScanTargetResult{SourceKey: "sender", Exist: true}
+	addrs["0xdbe52dfb4141dfc4a4ca78bc2338e5ec7eee6359"] = openwallet.ScanTargetResult{SourceKey: "receiver", Exist: true}
 
 	scanTargetFunc := func(target openwallet.ScanTargetParam) openwallet.ScanTargetResult {
 		if target.ScanTargetType == openwallet.ScanTargetTypeContractAddress {
